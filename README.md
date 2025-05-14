@@ -25,22 +25,22 @@ termux-setup-storage
 ```bash
 apt update && apt upgrade -y && \
 pkg install root-repo git tsu python wpa-supplicant pixiewps iw openssl -y && \
-git clone --depth 1 https://github.com/risunCode/PyDust-OneShot && \
+git clone --depth 1 https://github.com/risunCode/PyDust && \
 termux-setup-storage && \
-sudo python PyDust-OneShot/pydust.py -i wlan0 -K
+sudo python PyDust/pydust.py -i wlan0 -K
 ```
 
 ## 📁 Clone Tanpa Dependencies
 ```bash
-git clone --depth 1 https://github.com/risunCode/PyDust-OneShot
+git clone --depth 1 https://github.com/risunCode/PyDust
 ```
 
 ---
 ## 🔄 Reinstall OneShot (Hapus & Clone Ulang)
 ```bash
-rm -rf PyDust-OneShot
-git clone https://github.com/risunCode/PyDust-OneShot.git
-sudo python pydust.py -i wlan0 -d 5 -l -K
+rm -rf PyDust
+git clone https://github.com/risunCode/PyDust.git
+sudo python PyDust/pydust.py -i wlan0 -d 5 -l -K
 ```
 
 ---
@@ -49,24 +49,24 @@ sudo python pydust.py -i wlan0 -d 5 -l -K
 
 - **Pixie Dust (interface down):**
 ```bash
-sudo python PyDust-OneShot/pydust.py -i wlan0 --iface-down -K
+sudo python PyDust/pydust.py -i wlan0 --iface-down -K
 ```
 
 - **Pixie Dust Unlimited:**
 ```bash
-sudo python PyDust-OneShot/pydust.py -i wlan0 -d 3 -l -K
+sudo python PyDust/pydust.py -i wlan0 -d 3 -l -K
 ```
 
 - **Online Brute Force:**
 ```bash
-sudo python PyDust-OneShot/pydust.py -i wlan0 -l -B
+sudo python PyDust/pydust.py -i wlan0 -l -B
 ```
 
 - **Push Button Connect (semua target):**
 - contoh target
 - -i wlan0 --push-button-connect -b 00:90:4C:C1:AC:21
 ```bash
-sudo python PyDust-OneShot/pydust.py -i wlan0 -l --push-button-connect
+sudo python PyDust/pydust.py -i wlan0 -l --push-button-connect
 ```
 
  # Usage
@@ -105,4 +105,4 @@ sudo python PyDust-OneShot/pydust.py -i wlan0 -l --push-button-connect
 * mff aing cuman nempel nama hehe
 
 #### Another good repo
--
+- xxxx
