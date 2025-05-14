@@ -1,0 +1,39 @@
+# ANSI color codes
+GREEN = "\033[1;32m"
+CYAN = "\033[1;36m"
+WHITE = "\033[1;37m"
+RED = "\033[1;31m"
+RESET = "\033[0m"
+
+banner = rf"""{GREEN}
+    ____        ____             __ 
+   / __ \__  __/ __ \__  _______/ /_
+  / /_/ / / / / / / / / / / ___/ __/
+ / ____/ /_/ / /_/ / /_/ (__  / /_  
+/_/    \__, /_____/\__,_/____/\__/  
+      /____/                        
+{CYAN}PyDust v1.0{RESET}
+"""
+
+info = rf"""{WHITE}
+[+] Credit goes to all contributors
+    rofl0r, fulvius31, and others.
+[+] This tool is for educational purposes only.
+[+] Use responsibly and at your own risk.
+[+] The author is not responsible for any misuse or damage caused by this tool.
+[+] Stay safe and happy hacking!
+[+] hehe risunCode is here, but im doing nothing :D
+{RED}[!] Note: This tool requires root privileges.{RESET}
+{CYAN}▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬{RESET}
+"""
+
+# Print banner with animation
+for char in banner:
+    print(char, end='', flush=True)
+    time.sleep(0.005)
+print(info)
+
+# Error exit function
+def die(msg):
+    sys.stderr.write(msg + '\n')
+    sys.exit(1)
